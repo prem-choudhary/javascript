@@ -1,0 +1,6 @@
+const arr1 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+console.table(arr1);
