@@ -46,9 +46,9 @@
 // // console.log(typeof str);
 // // console.log(str);
 
-// // let x = 2;
-// // console.log(++x);
-// // console.log(x);
+ let x = 2;
+ console.log(++x);
+ console.log(x);
 
 // // let z = 10;
 // // let y = ++z;
