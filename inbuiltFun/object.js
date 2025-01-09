@@ -20,10 +20,10 @@ const details = {
   },
 };
 
-// console.log(details.name);
-// console.log(details.hobbies);
-// console.log(details.subjects.history);
-// console.log(details.address.village);
+ console.log(details.name);
+ console.log(details.hobbies);
+ console.log(details.subjects.history);
+ console.log(details.address.village);
 
 // console.log(details);
 
