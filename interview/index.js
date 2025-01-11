@@ -15,3 +15,19 @@ console.log(isPrime(2)); // true
 console.log(isPrime(4)); // false
 console.log(isPrime(17)); // true
 console.log(isPrime(1)); // false
+
+console.log("Hello Prem Choudhary")
+
+function primesInRange(start, end) {
+  let primes = [];
+  for (let i = start; i <= end; i++) {
+    if (isPrime(i)) {
+      primes.push(i);
+    }
+  }
+  return primes;
+}
+
+// Example Usage
+console.log(primesInRange(1, 20)); 
+// Output: [2, 3, 5, 7, 11, 13, 17, 19]
