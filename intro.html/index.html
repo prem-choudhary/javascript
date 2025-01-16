@@ -49,6 +49,11 @@
       <h1>Countdown Timer</h1>
       <div class="time" id="time">00:00:00</div>
       <button id="startTimer">Start Timer</button>
+      <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <button type="submit">Submit</button>
+      </form> 
     </div>
 
     <script src="timer.js"></script>
