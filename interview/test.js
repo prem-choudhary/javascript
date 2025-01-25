@@ -74,7 +74,7 @@ function doSomething() {
   doSomething();
 
   var x = 10;
-  for (let i = 0; i <= x; i++)
+  for (let i = 0; i <= x; i++) nnnn
     if (i % 2 == 0) {
       console.log("even number is ", i);
     }
