@@ -15,4 +15,5 @@ function factorial(n) {
 
 console.log(factorial(5)); // Output: 120
 console.log(factorial(0)); // Output: 1
+
 console.log(factorial(-3)); // Output: "Factorial is not defined for negative numbers."
