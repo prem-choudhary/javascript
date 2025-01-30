@@ -4,13 +4,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #130808;
     color: #333;
 }
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #28d818;
     padding: 10px 0;
     text-align: center;
 }
@@ -30,14 +30,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #e41010;
     text-decoration: none;
 }
 
 section {
     padding: 20px;
     margin: 20px 0;
-    background-color: #fff;
+    background-color: #c9b3b3;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -46,7 +46,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
-    color: #fff;
+    color: #8fcd1c;
     position: fixed;
     width: 100%;
     bottom: 0;
