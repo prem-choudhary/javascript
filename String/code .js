@@ -79,30 +79,30 @@ if (tagline.length > 0) {
 } else {
   console.log("words", 0);
 }
-// console.log("words", Bag);
+ console.log("words", Bag);
 
-// let words = Bag + 1;
-// console.log(" Words", words);
+ let words = Bag + 1;
+ console.log(" Words", words);
 
 //  LowerCase to UpperCase
 
-// let feel = " i'm feeling sad"
+ let feels = " i'm feeling sad"
 
-// let lower = "abcdefghijklmnopqrstuvwxyz";
-// let upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-// conword = "";
-// for (let i = 0; i < feel.length; i++) {
-//   let char = feel[i];
-//   if (char == " ") {
-//     conword = conword + " ";
-//   }
-//   for (let j = 0; j <= lower.length; j++) {
-//     if (char == lower[j]) {
-//       conword = conword + upper[j];
-//     }
-//   }
-// }
-// console.log(conword);
+let lowers = "abcdefghijklmnopqrstuvwxyz";
+ let uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+ conword = "";
+ for (let i = 0; i < feels.length; i++) {
+   let char = feels[i];
+  if (char == " ") {
+    conword = conword + " ";
+   }
+  for (let j = 0; j <= lowers.length; j++) {
+    if (char == lowers[j]) {
+       conword = conword + uppers[j];
+     }
+   }
+ }
+ console.log(conword);
 
 // upper to lower
 let feel = "I'M FEELING  HAPPY ";
