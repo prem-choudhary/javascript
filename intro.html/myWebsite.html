@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern HTML Page</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background-color: #e67e22; */
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        /* background-attachment: fixed; */
+        background-color: rgb(128, 69, 183);
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Navigation Bar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #333;
+        color: #1acbce;
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      nav ul li a {
+        color: #fff;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #726a5c;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #0f0e0e;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .hero .btn {
+        background: #080706;
+        color: #13e02e;
+        padding: 0.75rem 2rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .hero .btn:hover {
+        background: #e67e22;
+      }
+
+      /* Features Section */
+      .features {
+        padding: 4rem 2rem;
+        background: #b8b4e7;
+        text-align: center;
+      }
+
+      .features h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .features .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .features .card {
+        background: #e1b9de;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(60, 67, 178, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .features .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .features .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .features .card p {
+        font-size: 1rem;
+        color: #666;
+      }
+
+      footer {
+        background: #333;
+        color: #e1dbdb;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      footer .social-links {
+        margin-bottom: 1rem;
+      }
+
+      footer .social-links a {
+        margin: 0 0.5rem;
+        color: #14978e;
+        transition: color 0.3s;
+      }
+
+      footer .social-links a:hover {
+        color: #e67e22;
+      }
+
+      footer p {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Choudhary's</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="hero">
+      <div>
+        <h1>Welcome to Choudhary's Website</h1>
+        <p>Your one-stop solution for modern web development.</p>
+        <button class="btn">Get Started</button>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>Our Features</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Feature One</h3>
+          <p>
+            <!-- <img src=""/> -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            purus at sapien.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Feature Two</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            purus at sapien.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Feature Three</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
+            purus at sapien.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <p>&copy; 2025 Choudhary's MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
