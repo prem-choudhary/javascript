@@ -32,8 +32,9 @@ function binaryMatrix(N, M, matrix) {
       matrix[i][j] = matrix[i][j] === 1 ? 1 : 0;
       // Add element to string, with space only between elements
       rowString += matrix[i][j] + (j < M - 1 ? " " : "");
+      
     }
     console.log(rowString); 
-    
+
   }
 }
