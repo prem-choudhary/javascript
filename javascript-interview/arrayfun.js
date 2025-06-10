@@ -29,10 +29,11 @@ function binaryMatrix(N, M, matrix) {
     let rowString = "";
     for (let j = 0; j < M; j++) {
       // Convert to binary (1 if value is 1, else 0)
+      
       matrix[i][j] = matrix[i][j] === 1 ? 1 : 0;
       // Add element to string, with space only between elements
       rowString += matrix[i][j] + (j < M - 1 ? " " : "");
-      
+
     }
     console.log(rowString); 
 
