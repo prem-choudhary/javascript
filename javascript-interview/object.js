@@ -10,3 +10,4 @@ const entries = Object.entries(obj);
 // Object.fromEntries() transforms a list of key-value pairs into an object
 const newObj = Object.fromEntries(entries);
 
+
