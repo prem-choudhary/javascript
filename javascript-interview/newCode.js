@@ -3,6 +3,7 @@ let list = [10, 20, 30, 40];
 console.log("Array List Access:", list[2]); // Output: 30 (O(1) access)
 
 let stack = [];
+
 stack.push(1); // O(1)
 stack.push(2);
 stack.push(3);
