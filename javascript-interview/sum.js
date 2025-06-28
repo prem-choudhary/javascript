@@ -3,6 +3,7 @@ let sum = 0;
 
 for (let i = 0; i < odd.length; i++) {
   sum = sum + odd[i];
+  
 }
 
 console.log(sum);
