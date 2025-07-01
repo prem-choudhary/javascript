@@ -4,3 +4,5 @@ console.log(str == num);
 console.log(str === num);
 
 //  add some basic code  
+
+console.log([] == ![])
