@@ -4,10 +4,13 @@ console.log("Array List Access:", list[2]); // Output: 30 (O(1) access)
 
 let stack = [];
 
+
 stack.push(1); // O(1)
 stack.push(2);
 stack.push(3);
+
 console.log("Stack Pop:", stack.pop()); // Output: 3 (O(1))
+
 
 console.log("Stack After Pop:", stack); // Output: [1, 2]
 
@@ -15,6 +18,7 @@ let queue = [];
 queue.push(1); // O(1)
 queue.push(2);
 console.log("Queue Shift:", queue.shift()); // Output: 1 (O(n))
+
 
 console.log("Queue After Shift:", queue); // Output: [2]
 
