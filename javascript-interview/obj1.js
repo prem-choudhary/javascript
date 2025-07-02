@@ -14,3 +14,5 @@ console.log("Map: ", map);
 
 console.log("Object length:", Object.keys(obj).length); // 3
 console.log("Map size:", map.size); // 3
+
+console.log(0.2+ 0.2 === 0.3);
