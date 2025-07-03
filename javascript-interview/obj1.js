@@ -10,6 +10,7 @@ const map = new Map();
 map.set("name", "Akshay");
 map.set(42, "Number key stays number");
 map.set({ a: 1 }, "Object as key works perfectly!");
+
 console.log("Map: ", map);
 
 console.log("Object length:", Object.keys(obj).length); // 3
