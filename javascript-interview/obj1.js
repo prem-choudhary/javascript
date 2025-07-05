@@ -1,11 +1,9 @@
-// Object Example
 const obj = {};
 obj["name"] = "Akshay";
 obj[42] = "Number key becomes string";
 obj[{ a: 1 }] = "Object key? Actually '[object Object]'!";
 console.log("Object: ", obj);
 
-// Map Example
 const map = new Map();
 map.set("name", "Akshay");
 map.set(42, "Number key stays number");
