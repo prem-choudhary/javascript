@@ -2,7 +2,7 @@ function greet(name) {
   return `Hello, ${name}!`;
 }
 
-console.log(greet("Aaruu")); // Output: Hello, Alice!
+console.log(greet("Aaruu")); // Output: Hello, Aaruu!
 
 let fruits = ["apple", "banana", "cherry"];
 console.log(fruits[1]); // Output: banana
