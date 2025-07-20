@@ -8,3 +8,4 @@ function myFunction() {
 
 console.log("Outside myFunction - Type of petName:", typeof petName);
 console.log("Outside myFunction - petName:", petName);
+
