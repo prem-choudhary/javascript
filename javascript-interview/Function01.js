@@ -27,6 +27,7 @@ function JustDoIt() {
   console.log("their way ends");
 }
 
+
 function JustDoIMyWay() {
   console.log("my way starts");
   var startOf = new Date().getTime();
