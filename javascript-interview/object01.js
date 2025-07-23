@@ -24,3 +24,5 @@ function Person(name) {
 var object = new Person("Sudheer");
 console.log(Person)
 console.log(object)
+
+console.info("Data science and Arts")
