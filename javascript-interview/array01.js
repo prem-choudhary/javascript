@@ -75,6 +75,14 @@ function nextGreaterElement(arr) {
     stack.push(arr[i]);
   }
   return result;
-  
 }
 console.log(nextGreaterElement([4, 5, 2, 25])); // [5, 25, 25, -1]
+
+const todos = [
+  { id: 1, task: "Learn JavaScript", completed: true },
+  { id: 2, task: "Practice Coding", completed: false },
+  { id: 3, task: "Build Projects", completed: false },
+];
+
+const pending = todos.filter((todo) => !todo.completed);
+console.log("Pending tasks:", pending);
