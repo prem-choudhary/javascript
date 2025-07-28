@@ -86,3 +86,4 @@ const todos = [
 
 const pending = todos.filter((todo) => !todo.completed);
 console.log("Pending tasks:", pending);
+
