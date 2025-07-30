@@ -75,6 +75,7 @@ function nextGreaterElement(arr) {
     stack.push(arr[i]);
   }
   
+  
   return result;
 }
 console.log(nextGreaterElement([4, 5, 2, 25])); // [5, 25, 25, -1]
