@@ -53,3 +53,5 @@ let arr = [1, 2, 3, 4, 5];
 let head = createLinkedList(arr);
 let reversedHead = reverseLinkedList(head);
 console.log(linkedListToArray(reversedHead)); // Output: [5, 4, 3, 2, 1]
+
+console.log("Hello Javascript")
