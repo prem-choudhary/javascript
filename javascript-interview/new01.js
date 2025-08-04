@@ -25,7 +25,6 @@ function reverseLinkedList(head) {
   return prev;
 }
 
-
 // Helper function to create a linked list from an array
 function createLinkedList(arr) {
   if (arr.length === 0) return null;
@@ -55,4 +54,4 @@ let head = createLinkedList(arr);
 let reversedHead = reverseLinkedList(head);
 console.log(linkedListToArray(reversedHead)); // Output: [5, 4, 3, 2, 1]
 
-console.log("Hello Javascript")
+console.log("Hello Javascript");
