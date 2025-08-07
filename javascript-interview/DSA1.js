@@ -12,4 +12,3 @@ const users = [
 ];
 
 console.log(getUniqueValues(users, "role"));
-// Output: ["admin", "editor", "viewer"]
