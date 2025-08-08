@@ -12,3 +12,4 @@ const users = [
 ];
 
 console.log(getUniqueValues(users, "role"));
+console.log(users)
