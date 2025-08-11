@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Product Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">MyStore</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="product-page">
+      <div class="product-images">
+        <img
+          src="https://repository-images.githubusercontent.com/456963513/82528385-a73f-488f-9003-513321283a6b"
+          alt="Product Image"
+          class="main-image"
+        />
+        <div class="thumbnails">
+          <img
+            src="https://m.media-amazon.com/images/I/61JvFLHZ6NL._UF1000,1000_QL80_.jpg"
+            alt="Thumbnail 1"
+          />
+          <img
+            src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MQTQ3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=dkp4djAxbnA1NnpYWDIvVklnLzRpUWtuVHYzMERCZURia3c5SzJFOTlPZ3oveDdpQVpwS0ltY2w2UW05aU90T1lYTmlwOFY3ZXdFd0FRY2dWaUc5UlE"
+            alt="Thumbnail 2"
+          />
+          <img
+            src="https://m.media-amazon.com/images/I/81pieXC63IL.jpg"
+            alt="Thumbnail 3"
+          />
+          <img
+            src="https://www.artisera.com/cdn/shop/products/37.1_0b3c6b9c-229e-4052-b7d8-472c68283252_1024x1024.jpg?v=1632392673"
+            alt="Thumbnail 4"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyu9UdcbHzfa-qMFE3tm5p0On3L6l5Ruskv0OO9VYc_bYKB8r1Mbc-YMbaq1M_j7OnO_I&usqp=CAU"
+            alt="Thumbnail 5"
+          />
+          <img
+            src="https://www.omorfee.in/cdn/shop/products/Omorfee-Gentleman_s-Body-Wash-250-ml-Front-OBE088_1fbb17c9-fbe8-455b-a555-ecdfaa9a7c08.jpg?v=1604651482"
+            alt="Thumbnail 6"
+          />
+        </div>
+      </div>
+
+      <div class="product-details">
+        <h1>Wireless Headphones</h1>
+        <p class="price">$99.99</p>
+        <p class="description">
+          High-quality wireless headphones with noise cancellation, long battery
+          life, and comfortable fit. Perfect for music lovers and professionals
+          on the go.
+        </p>
+        <div class="options">
+          <label for="color">Color:</label>
+          <select id="color">
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+          </select>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" value="1" min="1" />
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </main>
+
+    <section class="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review">
+        <p class="rating">★★★★★</p>
+        <p>"Excellent sound quality and battery life!" - Prem Chaudhary</p>
+      </div>
+      <div class="review">
+        <p class="rating">★★★★☆</p>
+        <p>"Great value for the price." - Mohit</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 MyStore. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
