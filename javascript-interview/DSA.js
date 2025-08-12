@@ -9,3 +9,4 @@ function customMap(arr, callback) {
 const numbers = [1, 2, 3];
 const doubled = customMap(numbers, (num) => num * 2);
 console.log(doubled);
+
