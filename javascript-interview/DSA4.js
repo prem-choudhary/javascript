@@ -32,3 +32,6 @@ const higherOrder = (callback) => callback();
 
 // Passing the first-order function to the higher-order function
 higherOrder(firstOrderFunc);
+
+
+console.log([] + {})
