@@ -26,7 +26,7 @@ function inorderTraversal(root) {
 
   return result;
 }
-console.log(inorderTraversal)
+console.log(inorderTraversal);
 
 // Example usage
 const root = new TreeNode(1);
