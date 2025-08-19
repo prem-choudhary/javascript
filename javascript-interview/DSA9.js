@@ -17,6 +17,7 @@ function minInsertions(str) {
         dp[start][end] = dp[start + 1][end - 1];
       } else {
         dp[start][end] = Math.min(dp[start + 1][end], dp[start][end - 1]) + 1;
+        
       }
     }
   }
