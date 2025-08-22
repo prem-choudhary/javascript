@@ -19,6 +19,7 @@ function minInsertions(str) {
   return dp[0][n - 1];
 }
 
+
 // Example usage
 console.log(minInsertions("zzazz")); // Output: 0 (already a palindrome)
 console.log(minInsertions("mbadm")); // Output: 2 (e.g., insert 'b' and 'd' to get "mbdadm")
