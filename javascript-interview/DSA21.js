@@ -28,6 +28,7 @@ for (let i = left; i <= right; i++) {
 
 // Print left boundary (column at index 'left')
 console.log("\nLeft Boundary:");
+
 for (let i = top; i <= bottom; i++) {
   console.log(`matrix[${i}][${left}] = ${matrix[i][left]}`);
 }
