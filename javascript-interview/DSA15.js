@@ -21,7 +21,7 @@ function mergeSortedArrays(arr1, arr2) {
   }
 
   // Add remaining elements from arr2, if any
-  
+
   while (j < arr2.length) {
     merged.push(arr2[j]);
     j++;
