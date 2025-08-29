@@ -15,6 +15,7 @@ function reverseListRecursive(head) {
   let newHead = reverseListRecursive(head.next);
 
   // Reverse the link
+  
   head.next.next = head;
   head.next = null;
 
