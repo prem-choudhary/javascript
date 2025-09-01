@@ -19,6 +19,7 @@ function reverseListRecursive(head) {
 
   head.next.next = head;
   head.next = null;
+  console.log(reverseListRecursive)
 
   return newHead;
 }
