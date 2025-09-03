@@ -11,6 +11,7 @@ class Stack {
   // Pop an element from the stack
   pop() {
     if (this.isEmpty()) return null;
+    
     return this.items.pop();
   }
 
