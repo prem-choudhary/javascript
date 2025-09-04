@@ -10,9 +10,8 @@
 //   return original === reversed;
 // }
 
-// console.log(isPalindrome(121)); 
-// console.log(isPalindrome(123)); 
-
+// console.log(isPalindrome(121));
+// console.log(isPalindrome(123));
 
 const isPalindrome = (num) => {
   let original = num;
@@ -26,5 +25,9 @@ const isPalindrome = (num) => {
   return original === reversed;
 };
 
-console.log(isPalindrome(121));  // true
-console.log(isPalindrome(123));  // false
+console.log(isPalindrome(121)); // true
+console.log(isPalindrome(123)); // false
+console.log(isPalindrome(45));
+console.log(isPalindrome(100));
+console.log(isPalindrome(18));
+console.log(isPalindrome(77));
