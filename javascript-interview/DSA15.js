@@ -5,6 +5,7 @@ function mergeSortedArrays(arr1, arr2) {
 
   // Compare elements from both arrays and merge in sorted order
   while (i < arr1.length && j < arr2.length) {
+    
     if (arr1[i] <= arr2[j]) {
       merged.push(arr1[i]);
       i++;
