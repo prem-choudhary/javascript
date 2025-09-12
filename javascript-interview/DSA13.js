@@ -19,3 +19,4 @@ function firstNonRepeatedChar(str) {
 // Example usage
 console.log(firstNonRepeatedChar("swiss")); // Output: "w"
 console.log(firstNonRepeatedChar("aabb")); // Output: null
+console.log(firstNonRepeatedChar("aabb")); // Output: null
