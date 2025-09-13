@@ -1,3 +1,4 @@
+
 function firstNonRepeatedChar(str) {
   const charCount = {};
 
