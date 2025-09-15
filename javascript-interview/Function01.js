@@ -18,6 +18,7 @@ function reverseTheirWay(array) {
 
 function JustDoIt() {
   console.log("their way starts");
+  
   var startOf = new Date().getTime();
   for (var p = 0; p < 10000; p++) {
     console.log(reverseTheirWay([7, 6, 5, 4, 3, 2, 1]));
