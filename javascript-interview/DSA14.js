@@ -1,6 +1,7 @@
 function findDuplicates(arr) {
   const seen = {};
   const duplicates = [];
+  
 
   for (let num of arr) {
     if (seen[num]) {
