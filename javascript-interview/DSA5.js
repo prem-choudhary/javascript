@@ -2,6 +2,7 @@ console.log("123");
 let numbers = [1, 2, 3, 4];
 
 // Map - create a new array by modifying elements
+
 let doubled = numbers.map((num) => num * 2); // [2, 4, 6, 8]
 
 // Filter - create a new array with specific condition
