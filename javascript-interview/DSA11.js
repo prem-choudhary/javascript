@@ -4,7 +4,6 @@ function minInsertions(str) {
     .fill()
     .map(() => Array(n).fill(0));
 
-  // Fill dp table for substrings of increasing length
 
   for (let len = 2; len <= n; len++) {
     for (let start = 0; start <= n - len; start++) {
