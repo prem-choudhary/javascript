@@ -23,7 +23,6 @@ console.log("Name: Ritik");
 console.log("Age: 30");
 console.groupEnd();
 
-
 console.count("countLabel");
 console.count("countLabel");
 console.count("countLabel");
