@@ -11,5 +11,5 @@ const magic = [3, 2, 1] + [1, 2, 3];
 
 console.log(magic); // out 3,2,11,2,3
 
-const{length} = "hello"
-console.log(length)
+const { length } = "hello";
+console.log(length);
