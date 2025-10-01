@@ -1,5 +1,4 @@
 function isPalindrome(str) {
-  // Convert to lowercase and remove non-alphanumeric characters
   str = str.toLowerCase().replace(/[^a-z0-9]/g, "");
 
   let left = 0;
