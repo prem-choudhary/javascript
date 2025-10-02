@@ -17,4 +17,4 @@ function isPalindrome(str) {
 // Example usage
 console.log(isPalindrome("A man, a plan, a canal: Panama")); // Should output: true
 console.log(isPalindrome("race a car")); // Should output: false
-console.log("Prem")
+console.log("Prem");
