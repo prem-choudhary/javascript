@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FoodieExpress - Fresh Food Delivery</title>
+    <meta
+      name="description"
+      content="Order fresh, delicious food from your favorite local restaurants with fast delivery"
+    />
+    <meta
+      name="keywords"
+      content="food delivery, restaurant, online ordering, fresh food, fast delivery"
+    />
+    <meta property="og:title" content="FoodieExpress - Fresh Food Delivery" />
+    <meta
+      property="og:description"
+      content="Order fresh, delicious food from your favorite local restaurants with fast delivery"
+    />
+    <meta name="twitter:title" content="FoodieExpress - Fresh Food Delivery" />
+    <meta
+      name="twitter:description"
+      content="Order fresh, delicious food from your favorite local restaurants with fast delivery"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+      @layer theme {
+          :root {
+              --primary-color: #ef4444;
+              --secondary-color: #bdb4b4;
+              --accent-color: #dc2626;
+              --text-primary: #1f2937;
+              --text-secondary: #6b7280;
+              --border-color: #e5e7eb;
+          }
+      }
+
+      @layer base {
+          body {
+              font-family: 'Inter', sans-serif;
+              color: var(--text-primary);
+          }
+      }
+
+      @layer components {
+          .btn-primary {
+              @apply bg-[var(--primary-color)] text-white px-4 py-2 rounded-lg font-medium hover:bg-[var(--accent-color)] transition-colors;
+          }
+
+          .btn-secondary {
+              @apply bg-[var(--secondary-color)] text-[var(--primary-color)] px-4 py-2 rounded-lg font-medium hover:bg-red-100 transition-colors;
+          }
+
+          .card {
+              @apply bg-white rounded-xl shadow-sm border border-[var(--border-color)] p-4;
+          }
+
+          .food-card {
+              @apply card hover:shadow-md transition-shadow cursor-pointer;
+          }
+      }
+
+      @layer utilities {
+          .text-shadow {
+              text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40" data-name="header">
+      <div class="max-w-7xl mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <div
+              class="w-8 h-8 bg-[var(--primary-color)] rounded-lg flex items-center justify-center"
+            >
+              <div class="icon-utensils text-white text-lg"></div>
+            </div>
+            <h1 class="text-2xl font-bold text-[var(--text-primary)]">
+              FoodieExpress
+            </h1>
+          </div>
+
+          <nav class="hidden md:flex items-center space-x-6">
+            <a
+              href="#"
+              id="home-link"
+              class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors cursor-pointer"
+              >Home</a
+            >
+            <a
+              href="#"
+              id="menu-link"
+              class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors cursor-pointer"
+              >Menu</a
+            >
+            <a
+              href="#"
+              id="about-link"
+              class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors cursor-pointer"
+              >About</a
+            >
+            <a
+              href="#"
+              id="contact-link"
+              class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors cursor-pointer"
+              >Contact</a
+            >
+          </nav>
+
+          <div class="flex items-center space-x-4">
+            <button
+              id="cart-btn"
+              class="relative p-2 text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
+            >
+              <div class="icon-shopping-cart text-xl"></div>
+              <span
+                id="cart-count"
+                class="absolute -top-1 -right-1 bg-[var(--primary-color)] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden"
+                >0</span
+              >
+            </button>
+            <button
+              id="signin-btn"
+              class="btn-primary hover:scale-105 active:scale-95 transition-transform"
+            >
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-color)] text-white py-16"
+      data-name="hero"
+    >
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-shadow">
+          Delicious Food Delivered Fast
+        </h2>
+        <p class="text-xl mb-8 text-red-100 max-w-2xl mx-auto">
+          Order from your favorite local restaurants and get fresh, hot food
+          delivered right to your door in 30 minutes or less.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+        >
+          <div
+            class="hero-badge bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg px-6 py-3 flex items-center space-x-2 cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-lg"
+            data-message="We guarantee delivery within 30 minutes or it's free!"
+          >
+            <div class="icon-clock text-white text-lg"></div>
+            <span class="font-medium">Fast 30min delivery</span>
+          </div>
+          <div
+            class="hero-badge bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg px-6 py-3 flex items-center space-x-2 cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-lg"
+            data-message="Rated 5 stars by over 10,000 happy customers!"
+          >
+            <div class="icon-star text-white text-lg"></div>
+            <span class="font-medium">5-star rated service</span>
+          </div>
+          <div
+            class="hero-badge bg-white bg-opacity-20 hover:bg-opacity-30 rounded-lg px-6 py-3 flex items-center space-x-2 cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-lg"
+            data-message="Orders over $25 qualify for free delivery!"
+          >
+            <div class="icon-truck text-white text-lg"></div>
+            <span class="font-medium">Free delivery over $25</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <!-- Category Filter -->
+      <div
+        class="flex flex-wrap gap-3 justify-center"
+        data-name="category-filter"
+      >
+        <button
+          class="category-btn flex items-center space-x-2 px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 hover:shadow-md bg-[var(--primary-color)] text-white shadow-lg scale-105"
+          data-category="all"
+        >
+          <div
+            class="icon-grid-3x3 text-lg transition-transform hover:rotate-12"
+          ></div>
+          <span>All Items</span>
+        </button>
+        <button
+          class="category-btn flex items-center space-x-2 px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 hover:shadow-md bg-white text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]"
+          data-category="pizza"
+        >
+          <div
+            class="icon-circle text-lg transition-transform hover:rotate-12"
+          ></div>
+          <span>Pizza</span>
+        </button>
+        <button
+          class="category-btn flex items-center space-x-2 px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 hover:shadow-md bg-white text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]"
+          data-category="burger"
+        >
+          <div
+            class="icon-circle text-lg transition-transform hover:rotate-12"
+          ></div>
+          <span>Burgers</span>
+        </button>
+        <button
+          class="category-btn flex items-center space-x-2 px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 hover:shadow-md bg-white text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]"
+          data-category="salad"
+        >
+          <div
+            class="icon-leaf text-lg transition-transform hover:rotate-12"
+          ></div>
+          <span>Salads</span>
+        </button>
+        <button
+          class="category-btn flex items-center space-x-2 px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 hover:shadow-md bg-white text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]"
+          data-category="dessert"
+        >
+          <div
+            class="icon-cake text-lg transition-transform hover:rotate-12"
+          ></div>
+          <span>Desserts</span>
+        </button>
+        <button
+          class="category-btn flex items-center space-x-2 px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 hover:shadow-md bg-white text-[var(--text-secondary)] hover:bg-[var(--secondary-color)] hover:text-[var(--primary-color)]"
+          data-category="drink"
+        >
+          <div
+            class="icon-coffee text-lg transition-transform hover:rotate-12"
+          ></div>
+          <span>Drinks</span>
+        </button>
+      </div>
+
+      <!-- Food Grid -->
+      <div
+        id="food-grid"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-8"
+      >
+        <!-- Food cards will be dynamically generated here -->
+      </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div
+      id="cart-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-end hidden"
+    >
+      <div class="bg-white w-full max-w-md h-full overflow-y-auto">
+        <div class="p-6 border-b border-[var(--border-color)]">
+          <div class="flex items-center justify-between">
+            <h2 class="text-xl font-semibold">Your Order</h2>
+            <button
+              id="close-cart"
+              class="p-2 text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+            >
+              <div class="icon-x text-xl"></div>
+            </button>
+          </div>
+        </div>
+
+        <div id="cart-content">
+          <div id="empty-cart" class="p-6 text-center">
+            <div
+              class="icon-shopping-cart text-4xl text-[var(--text-secondary)] mb-4 flex justify-center"
+            ></div>
+            <p class="text-[var(--text-secondary)]">Your cart is empty</p>
+          </div>
+
+          <div id="cart-items" class="hidden">
+            <div class="flex-1 p-6 space-y-4" id="items-container">
+              <!-- Cart items will be populated here -->
+            </div>
+
+            <div class="border-t border-[var(--border-color)] p-6 space-y-4">
+              <div class="space-y-2">
+                <div class="flex justify-between text-[var(--text-secondary)]">
+                  <span>Subtotal</span>
+                  <span id="subtotal">$0.00</span>
+                </div>
+                <div class="flex justify-between text-[var(--text-secondary)]">
+                  <span>Delivery Fee</span>
+                  <span id="delivery-fee">$3.99</span>
+                </div>
+                <div
+                  class="flex justify-between font-semibold text-lg pt-2 border-t"
+                >
+                  <span>Total</span>
+                  <span id="total">$0.00</span>
+                </div>
+              </div>
+
+              <button
+                id="checkout-btn"
+                class="w-full btn-primary py-3 text-lg hover:scale-105 active:scale-95 transition-all duration-300 hover:shadow-xl"
+              >
+                <div class="flex items-center justify-center space-x-2">
+                  <div class="icon-credit-card text-lg"></div>
+                  <span>Proceed to Checkout</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="foodData.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
