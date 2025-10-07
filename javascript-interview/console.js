@@ -24,6 +24,7 @@ console.count("countLabel");
 console.count("countLabel");
 console.count("countLabel");
 console.count("countLabel");
+
 function a() {
   b();
 }
