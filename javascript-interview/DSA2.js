@@ -8,7 +8,6 @@ function isSubsequence(s1, s2) {
     }
     j++;
   }
-  
 
   return i === s1.length;
 }
