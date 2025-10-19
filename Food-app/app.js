@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCartDisplay();
 });
 
+
 // Event listeners
 function initEventListeners() {
   // Navigation
