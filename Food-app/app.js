@@ -30,11 +30,13 @@ function initEventListeners() {
     alert("About page coming soon!");
   });
 
+
   document.getElementById("contact-link").addEventListener("click", (e) => {
     e.preventDefault();
     alert("Contact: hello@foodieexpress.com");
   });
 
+  
   document.getElementById("signin-btn").addEventListener("click", () => {
     alert("Sign in functionality coming soon!");
   });
