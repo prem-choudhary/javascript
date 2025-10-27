@@ -4,6 +4,7 @@ console.info(
   "%cThis is a styled info message!",
   "color: blue; font-size: 16px; font-weight: bold;"
 );
+
 console.table([
   { name: "Amit", age: 30 },
   { name: "Jatin", age: 25 },
@@ -24,7 +25,6 @@ console.count("countLabel");
 console.count("countLabel");
 console.count("countLabel");
 console.count("countLabel");
-
 function a() {
   b();
 }
