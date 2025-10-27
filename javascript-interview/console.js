@@ -15,7 +15,6 @@ function loops() {
   for (let i = 0; i <= 10000; i++) {}
 }
 loops();
-
 console.timeEnd("timer1");
 console.assert(5 > 10, "This assertion failed");
 console.group("User Information");
@@ -26,7 +25,6 @@ console.count("countLabel");
 console.count("countLabel");
 console.count("countLabel");
 console.count("countLabel");
-
 function a() {
   b();
 }
