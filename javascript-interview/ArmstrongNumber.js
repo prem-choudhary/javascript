@@ -1,6 +1,5 @@
 // A number is Armstrong if the sum of its digits powered by the number of digits equals the number itself (e.g. 153 = 1³ + 5³ + 3³)
 
-
 function isArmstrong(num) {
   let original = num;
   let count = 0;
