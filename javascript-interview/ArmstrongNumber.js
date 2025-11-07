@@ -1,7 +1,6 @@
 function isArmstrong(num) {
   let original = num;
   let count = 0;
-  // Count digits
   for (let temp = num; temp > 0; temp = Math.floor(temp / 10)) {
     count++;
   }
