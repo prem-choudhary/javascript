@@ -14,7 +14,9 @@ function isArmstrong(num) {
     }
     sum += power;
   }
+  
   return sum === original;
 }
+
 console.log(isArmstrong(153)); // true
 console.log(isArmstrong(123)); // false
