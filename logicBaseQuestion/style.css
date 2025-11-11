@@ -1,0 +1,99 @@
+/* General styling */
+body {
+  background: #0e1117;
+  color: #e4e6eb;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  background: #161b22;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 350px;
+}
+
+/* Title */
+h1 {
+  color: #58a6ff;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* Description */
+p {
+  color: #9da5b4;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Card Section */
+.card {
+  background: #1f2530;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+.card h2 {
+  color: #58a6ff;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+/* Status Indicator */
+.status {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.status.good {
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+}
+
+.status.bad {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+}
+
+/* FPS Display */
+.fps {
+  font-size: 18px;
+  color: #f1c40f;
+  margin-bottom: 20px;
+}
+
+/* Button */
+button {
+  background: #238636;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #8b949e;
+}
