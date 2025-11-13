@@ -10,15 +10,14 @@ for (var i = 0; i < name1.length; i++) {
 }
 console.log(jhola);
 
-var studentName = ["Amit", "Rajesh", "Kailash", "Aalok"];
-var bag = "";
+var studentName = ["Amit", "Rjesh", "Kailash", "Aalok"];
+var bag = 0;
 
 for (var i = 0; i < studentName.length; i++) {
-  if (studentName[0] == "A") {
-    bag = bag + studentName[i];
-    console.log(bag);
-  } else {
-    console.log("bag is empty");
+  var x = studentName[i];
+  if (x[0] == "A") {
+    // continue
+    bag++;
   }
 }
 console.log(bag);
