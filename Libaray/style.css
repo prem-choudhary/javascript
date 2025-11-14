@@ -1,0 +1,153 @@
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #758483;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background: #111;
+  padding: 12px 0;
+  color: rgb(149, 120, 212);
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  width: 180px;
+}
+
+.btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-success {
+  background: #28a745;
+  color: rgb(202, 220, 207);
+}
+
+.btn-dark {
+  background: #333;
+  color: rgb(224, 217, 217);
+}
+
+/* PAGE CONTAINER */
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: rgb(165, 187, 122);
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+/* FORM STYLE */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #43242a;
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.input:focus {
+  border-color: #111;
+}
+
+.note {
+  font-size: 12px;
+  color: black;
+}
+
+.radio-group label {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.radio-group input {
+  margin-right: 6px;
+}
+
+/* TABLE */
+.table {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+  background: lightslategray;
+  color: rgb(229, 229, 229);
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.table th,
+.table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.table th {
+  background: #111;
+}
+
+.table tr:hover {
+  background: #333;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
