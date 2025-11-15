@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Recipe Finder — Neumorphism Edition</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- TOPBAR -->
+    <header class="topbar neu">
+      <div class="wrap topbar-inner">
+        <h1 class="brand">Food <span>Finder</span></h1>
+
+        <!-- SEARCH FORM -->
+        <form id="searchForm" class="search-form">
+          <input
+            id="searchInput"
+            class="search-input neu-inset"
+            type="search"
+            placeholder="Search recipes (e.g. paneer, veg biryani)..."
+            autocomplete="off"
+          />
+
+          <button class="btn neu" type="submit">Search</button>
+        </form>
+
+        <!-- FAVORITES BUTTON -->
+        <button
+          id="favoritesToggle"
+          class="fav-toggle neu"
+          title="Show favorites"
+        >
+          ❤ <span id="favCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="controls wrap">
+        <small class="hint">
+          Tip: Try veg foods like "Paneer", "Dosa", "Veg Curry", "Dal",
+          "Samosa".
+        </small>
+      </section>
+
+      <!-- RESULTS GRID -->
+      <section id="results" class="wrap grid"></section>
+
+      <!-- EMPTY STATE -->
+      <section id="empty" class="wrap empty hidden">
+        <p>No recipes found. Try another search.</p>
+      </section>
+
+      <!-- LOADING -->
+      <section id="loading" class="wrap empty hidden">
+        <p>Loading recipes…</p>
+      </section>
+    </main>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-panel neu">
+        <button id="closeModal" class="modal-close">✕</button>
+        <div id="modalContent"></div>
+      </div>
+      <div id="modalBackdrop" class="modal-backdrop"></div>
+    </div>
+
+    <!-- FAVORITES DRAWER -->
+    <aside id="favorites" class="favorites-drawer neu hidden">
+      <div class="fav-header">
+        <h3>Favorites</h3>
+        <button id="closeFav" class="modal-close">✕</button>
+      </div>
+
+      <ul id="favList" class="fav-list"></ul>
+
+      <div class="fav-footer">
+        <button id="clearFav" class="btn btn-ghost neu">Clear All</button>
+      </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer class="footer wrap">
+      <p>Built with ❤️ using Veg Recipes API (only vegetarian food).</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
