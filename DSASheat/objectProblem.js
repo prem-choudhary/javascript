@@ -19,7 +19,7 @@ var obj2 = friends[1];
 // console.log(friends[1]);
 // console.log(obj2.name1);
 
-console.log(friends[0].name,friends[0].age,friends[0].city);
+console.log(friends[0].name, friends[0].age, friends[0].city);
 // console.log(friends[1].name);
 // console.log(friends[2].name);
 
