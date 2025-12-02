@@ -14,7 +14,7 @@ const number = [
   [7, 8, 9],
 ];
 
-console.log;
+console.log(number);
 
 const multiAraay = [
   ["A", "B", "C", "D"],

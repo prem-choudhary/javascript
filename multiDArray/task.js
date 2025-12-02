@@ -1,8 +1,8 @@
 const arr = [
   [1, 2, 3, 4],
-  [(5, 6, 7, 8)],
-  [(9, 10, 11, 12)],
-  [(13, 14, 15, 16)],
+  [5, 6, 7, 8],
+  [9, 10, 11, 12],
+  [13, 14, 15, 16],
 ];
 
 let top = 0;
@@ -18,20 +18,27 @@ while (count < n * m) {
     console.log(arr[i][left]);
     count++;
   }
+  console.log("");
   left++;
-  for (let i=left; right && count < n * m; i++) {
+  for (let i = left; i <= right && count < n * m; i++) {
     console.log(arr[bottom][i]);
     count++;
   }
+  console.log(" ");
+
   bottom--;
   for (let i = bottom; i >= top && count < n * m; i--) {
     console.log(arr[i][right]);
     count++;
   }
+  console.log("");
+
   right--;
-  for (let i = right; i >= left&& count < n * m; i--) {
+  for (let i = right; i >= left && count < n * m; i--) {
     console.log(arr[top][i]);
     count++;
   }
+  console.log("");
+
   top++;
 }
