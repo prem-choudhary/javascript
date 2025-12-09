@@ -25,11 +25,11 @@ const polythene2 = ["onion1", "onion2", "onion3"];
 arr1.push(polythene1);
 
 arr1.push(polythene2);
-console.log(arr1 );
+console.log(arr1);
 
 //  push methode
 
-let pattern = [];   
+let pattern = [];
 
 const bag = ["*", "*", "*"];
 const bag1 = ["#", "#"];
@@ -40,5 +40,4 @@ pattern.push(bag2);
 
 console.log(pattern);
 
-
-console.log("<<<<<<<<<<<<<<<<")
+console.log("<<<<<<<<<<<<<<<<");
