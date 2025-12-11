@@ -16,7 +16,7 @@ const el = [
 
 console.log(el.length);
 
-//  multi Dimensional  Array
+
 
 let arr1 = [];
 const polythene1 = ["tomato1", "tomato2", "tomato3"];
@@ -27,7 +27,7 @@ arr1.push(polythene1);
 arr1.push(polythene2);
 console.log(arr1);
 
-//  push methode
+
 
 let pattern = [];
 
