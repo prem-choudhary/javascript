@@ -3,6 +3,7 @@ const arr1 = [
   [4, 5, 6],
   [7, 8, 9],
 ];
+
 const rows = arr1.length;
 const cols = arr1[0].length;
 let bag = "";
