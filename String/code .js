@@ -19,7 +19,6 @@ for (let i = 0; i < str2.length; i++) {
 }
 console.log(res);
 console.log("---------^^^-------");
-// count the names which is starts from A
 const arr = ["Amit", "Sumit", "Anant", "Arati", "Deepak"]; // output is 3
 count = 0;
 for (let i = 0; i < arr.length; i++) {
@@ -33,7 +32,6 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 console.log(count);
-//  count the names which is contains A
 console.log("^^^^^_______^^^^^^_____");
 const moviesNames = ["Aag ka GOla", "Khoon ka Badala", "Loki"];
 // O/P  is 2
@@ -47,11 +45,9 @@ for (let i = 0; i < moviesNames.length; i++) {
       break;
     }
   }
-  //   break;
 }
 console.log(add);
 console.log("------------***********-------------");
-// givin a string count the number of words in  that string..
 const tagline = "Prem choudhary"; // output is 2 and 1 speac is here
 let Bag = 0;
 if (tagline.length > 0) {
@@ -68,7 +64,6 @@ if (tagline.length > 0) {
 console.log("words", Bag);
 let words = Bag + 1;
 console.log(" Words", words);
-//  LowerCase to UpperCase
 let feels = " i'm feeling sad";
 let lowers = "abcdefghijklmnopqrstuvwxyz";
 let uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -85,7 +80,6 @@ for (let i = 0; i < feels.length; i++) {
   }
 }
 console.log(conword);
-// upper to lower
 let feel = "I'M FEELING  HAPPY ";
 let lower = "abcdefghijklmnopqrstuvwxyz";
 let upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
