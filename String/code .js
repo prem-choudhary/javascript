@@ -9,11 +9,9 @@ for (let i = 0; i < str.length; i++) {
   }
 }
 console.log(jhola);
-
 console.log("--------------");
 const str2 = "masai school";
 let res = "";
-
 for (let i = 0; i < str2.length; i++) {
   res = res + str2[i];
 }
@@ -34,7 +32,6 @@ for (let i = 0; i < arr.length; i++) {
 console.log(count);
 console.log("^^^^^_______^^^^^^_____");
 const moviesNames = ["Aag ka GOla", "Khoon ka Badala", "Loki"];
-// O/P  is 2
 let add = 0;
 for (let i = 0; i < moviesNames.length; i++) {
   let res = moviesNames[i];
