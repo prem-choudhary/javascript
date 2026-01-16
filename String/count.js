@@ -23,7 +23,6 @@ for (let i = 0; i < arr.length; i++) {
 }
 console.log(add);
 console.log("_______________");
-
 const collageName = ["prem", "Bharat", "Kailash"];    // output is 17  
 let sum = 0;
 for (let i = 0; i < collageName.length; i++) {
