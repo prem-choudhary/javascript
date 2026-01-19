@@ -1,5 +1,3 @@
-//  givin an array ,  count total characters
-
 let str1 = ["Prem", "Bharta", "Kailash"];
 let count = 0;
 for (let i = 0; i < str1.length; i++) {
