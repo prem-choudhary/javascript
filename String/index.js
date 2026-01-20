@@ -7,9 +7,7 @@ console.log(str);
 for (let i = 0; i < str.length; i++) {
   console.log(str[i]);
 }
-
 //  we cerate a password is equal to 6 length
-
 const password = "Khoon ka badala";
 if (password.length > 6) {
   console.log("sing Up Successfull");
@@ -18,7 +16,6 @@ if (password.length > 6) {
     "Your password is to short plz password char is great than or equal to 6  length"
   );
 }
-
 const collageName = "shree vivekanad collage.Jodhapur";
 // for(let i = 0; i<collageName.length; i++){
 // }
