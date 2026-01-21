@@ -7,7 +7,6 @@ console.log(str);
 for (let i = 0; i < str.length; i++) {
   console.log(str[i]);
 }
-//  we cerate a password is equal to 6 length
 const password = "Khoon ka badala";
 if (password.length > 6) {
   console.log("sing Up Successfull");
@@ -20,9 +19,7 @@ const collageName = "shree vivekanad collage.Jodhapur";
 // for(let i = 0; i<collageName.length; i++){
 // }
 console.log(collageName.length);
-
 console.log("- - - - - - - - -");
-
 let s = "I am Prem Chaudhari";
 let stringlength = s.length;
 let space = 0;
