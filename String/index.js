@@ -28,16 +28,13 @@ if (stringlength > 1) {
     if (s[i] == " ") {
       space++;
     }
-  }
+  } 
   words = space + 1;
   console.log(words ,"words is here in s variables ");
 } else {
   console.log("words is 0 ");
 }
 console.log("!!!!!!!!!!!!1")
-
-//conver lowercase string into uppercase string
-
 let name = "i am prem choudhary ";
 let lower = "abcdefghijklmnopqrstuvwxyz";
 let upper = "ABCDEFGHIJLLMNOPQRSTUVWXYZ";
