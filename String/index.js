@@ -12,7 +12,7 @@ if (password.length > 6) {
   console.log("sing Up Successfull");
 } else {
   console.log(
-    "Your password is to short plz password char is great than or equal to 6  length"
+    "Your password is to short plz password char is great than or equal to 6  length",
   );
 }
 const collageName = "shree vivekanad collage.Jodhapur";
@@ -29,14 +29,14 @@ if (stringlength > 1) {
     if (s[i] == " ") {
       space++;
     }
-  } 
+  }
 
   words = space + 1;
-  console.log(words ,"words is here in s variables ");
+  console.log(words, "words is here in s variables ");
 } else {
   console.log("words is 0 ");
 }
-console.log("!!!!!!!!!!!!1")
+console.log("!!!!!!!!!!!!1");
 let name = "i am prem choudhary ";
 let lower = "abcdefghijklmnopqrstuvwxyz";
 let upper = "ABCDEFGHIJLLMNOPQRSTUVWXYZ";
