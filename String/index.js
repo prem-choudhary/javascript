@@ -52,12 +52,9 @@ for (let i = 0; i < name.length; i++) {
     }
   }
 }
-
 console.log(bag);
-
 let str1 = ["Prem", "Bharta", "Kailash"];
 let count = 0;
-
 for (let i = 0; i < str1.length; i++) {
   var x = str1[i];
   for (let j = 0; j < x.length; j++) {
@@ -65,11 +62,9 @@ for (let i = 0; i < str1.length; i++) {
   }
 }
 console.log(count);
-
 const school = "government Senior Secondary School dudor. marwar junction";
 console.log(school);
 console.log(school.length);
-
 for (let i = 0; i < school.length; i++) {
   console.log(school[i]);
 }
