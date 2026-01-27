@@ -18,7 +18,6 @@ if (password.length > 6) {
 const collageName = "shree vivekanad collage.Jodhapur";
 // for(let i = 0; i<collageName.length; i++){
 // }
-
 console.log(collageName.length);
 console.log("- - - - - - - - -");
 let s = "I am Prem Chaudhari";
@@ -30,7 +29,6 @@ if (stringlength > 1) {
       space++;
     }
   }
-
   words = space + 1;
   console.log(words, "words is here in s variables ");
 } else {
