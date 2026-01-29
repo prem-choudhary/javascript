@@ -16,8 +16,6 @@ if (password.length > 6) {
   );
 }
 const collageName = "shree vivekanad collage.Jodhapur";
-// for(let i = 0; i<collageName.length; i++){
-// }
 console.log(collageName.length);
 console.log("- - - - - - - - -");
 let s = "I am Prem Chaudhari";
