@@ -1,8 +1,8 @@
 const str = "Prem Choudhary";
+
 console.log(str[1]);
 console.log(str.length);
 console.log("spece is print", str[4]);
-console.log("************************");
 console.log(str);
 for (let i = 0; i < str.length; i++) {
   console.log(str[i]);
