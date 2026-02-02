@@ -16,7 +16,6 @@ f
       arr[minIndex] = temp;
     }
   }
-
   return arr;
 }
 
