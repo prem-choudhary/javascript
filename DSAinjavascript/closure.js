@@ -9,7 +9,6 @@ f
         minIndex = j;
       }
     }
-
     if (minIndex !== i) {
       let temp = arr[i];
       arr[i] = arr[minIndex];
@@ -18,12 +17,9 @@ f
   }
   return arr;
 }
-
 let array1 = [5, 4, 1, 3, 0, 7, 8, 9];
 console.log(selectionSort(array1));
-
 //  bubble
-
 function bubbleSort(arr) {
   let n = arr.length;
 
