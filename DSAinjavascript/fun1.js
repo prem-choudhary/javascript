@@ -3,6 +3,6 @@ function myFuunction() {
   console.log(x);
   const x = 10;
 }
-myFuunction(); 
+myFuunction();
 const x = 20;
-console.log(x); 
+console.log(x);
