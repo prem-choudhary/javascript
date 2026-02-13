@@ -69,7 +69,7 @@ const foodData = [
     description:
       "Classic pepperoni pizza with mozzarella cheese and spicy pepperoni",
     price: 16.99,
-    category: "pizza", 
+    category: "pizza",
     image:
       "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop",
     rating: 4.7,
@@ -104,5 +104,4 @@ const foodData = [
     reviews: 91,
     prepTime: 12,
   },
-  
 ];
