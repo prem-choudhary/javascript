@@ -1,10 +1,4 @@
-// ================================
-// Food Recipe Finder (Veg Only)
-// ================================
-
-// TheMealDB base API
 const API_BASE = "https://www.themealdb.com/api/json/v1/1";
-
 // DOM elements
 const dom = {
   form: document.getElementById("searchForm"),
@@ -24,10 +18,7 @@ const dom = {
   clearFav: document.getElementById("clearFav"),
 };
 
-// Load favorites
 let favorites = loadFavorites();
-
-// Helpers
 function el(tag, attrs = {}) {
   const e = document.createElement(tag);
   for (let k in attrs) e[k] = attrs[k];
