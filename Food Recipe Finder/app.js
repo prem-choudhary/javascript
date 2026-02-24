@@ -17,7 +17,6 @@ const dom = {
   closeFav: document.getElementById("closeFav"),
   clearFav: document.getElementById("clearFav"),
 };
-
 let favorites = loadFavorites();
 function el(tag, attrs = {}) {
   const e = document.createElement(tag);
