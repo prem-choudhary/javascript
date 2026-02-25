@@ -33,8 +33,6 @@ function escapeHtml(str = "") {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
 }
-
-// UI Helpers
 function showLoading(on = true) {
   dom.loading.classList.toggle("hidden", !on);
   dom.empty.classList.add("hidden");
@@ -45,32 +43,21 @@ function showEmpty(show = true) {
   dom.results.classList.toggle("hidden", show);
   dom.loading.classList.add("hidden");
 }
-
-// ===============================
-// VEG-ONLY SEARCH
-// ===============================
 async function searchRecipes(query) {
   dom.results.innerHTML = "";
   showLoading(true);
-
   try {
-    // Fetch veg-only meals
     const res = await fetch(`${API_BASE}/filter.php?c=Vegetarian`);
     const data = await res.json();
-
     let meals = data.meals || [];
-
-    // Filter by name
     meals = meals.filter((m) =>
       m.strMeal.toLowerCase().includes(query.toLowerCase())
     );
-
     if (meals.length === 0) {
       showLoading(false);
       showEmpty(true);
       return;
     }
-
     renderResults(meals);
   } catch (err) {
     console.error(err);
@@ -78,25 +65,18 @@ async function searchRecipes(query) {
     showEmpty(true);
   }
 }
-
-// ===============================
-// Render Results
-// ===============================
 function renderResults(meals) {
   dom.results.innerHTML = "";
   dom.results.classList.remove("hidden");
   dom.loading.classList.add("hidden");
   dom.empty.classList.add("hidden");
-
   meals.forEach((meal) => {
     const card = el("article", { className: "card" });
-
     card.innerHTML = `
       <img class="card-thumb" src="${meal.strMealThumb}" alt="${
       meal.strMeal
     }" />
       <h3 class="card-title">${escapeHtml(meal.strMeal)}</h3>
-
       <div class="card-actions">
         <button class="small-btn view-btn" data-id="${
           meal.idMeal
@@ -106,13 +86,10 @@ function renderResults(meals) {
         </button>
       </div>
     `;
-
     dom.results.appendChild(card);
-
     card
       .querySelector(".view-btn")
       .addEventListener("click", () => openRecipe(meal.idMeal));
-
     card.querySelector(".fav-btn").addEventListener("click", (ev) => {
       toggleFavorite(meal);
       ev.target.textContent = isFav(meal.idMeal) ? "Saved" : "Save";
@@ -120,15 +97,10 @@ function renderResults(meals) {
     });
   });
 }
-
-// ===============================
-// View Recipe Modal
-// ===============================
 async function openRecipe(id) {
   dom.modal.classList.remove("hidden");
   dom.modal.setAttribute("aria-hidden", "false");
   dom.modalContent.innerHTML = "<p>Loading…</p>";
-
   try {
     const res = await fetch(`${API_BASE}/lookup.php?i=${id}`);
     const data = await res.json();
@@ -142,13 +114,11 @@ async function openRecipe(id) {
       "<p>Unable to load recipe. Please try again.</p>";
   }
 }
-
 function closeModal() {
   dom.modal.classList.add("hidden");
   dom.modalContent.innerHTML = "";
   dom.modal.setAttribute("aria-hidden", "true");
 }
-
 function renderRecipeModal(meal) {
   const ingredients = [];
 
@@ -157,7 +127,6 @@ function renderRecipeModal(meal) {
     const mea = meal[`strMeasure${i}`];
     if (ing && ing.trim()) ingredients.push(`${mea || ""} ${ing}`.trim());
   }
-
   dom.modalContent.innerHTML = `
     <div class="recipe-grid">
       <div>
@@ -179,10 +148,6 @@ function renderRecipeModal(meal) {
     </div>
   `;
 }
-
-// ===============================
-// Favorites (LocalStorage)
-// ===============================
 function loadFavorites() {
   return JSON.parse(localStorage.getItem("veg_favs") || "[]");
 }
