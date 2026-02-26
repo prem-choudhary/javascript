@@ -51,7 +51,7 @@ async function searchRecipes(query) {
     const data = await res.json();
     let meals = data.meals || [];
     meals = meals.filter((m) =>
-      m.strMeal.toLowerCase().includes(query.toLowerCase())
+      m.strMeal.toLowerCase().includes(query.toLowerCase()),
     );
     if (meals.length === 0) {
       showLoading(false);
@@ -74,8 +74,8 @@ function renderResults(meals) {
     const card = el("article", { className: "card" });
     card.innerHTML = `
       <img class="card-thumb" src="${meal.strMealThumb}" alt="${
-      meal.strMeal
-    }" />
+        meal.strMeal
+      }" />
       <h3 class="card-title">${escapeHtml(meal.strMeal)}</h3>
       <div class="card-actions">
         <button class="small-btn view-btn" data-id="${
@@ -168,73 +168,54 @@ function toggleFavorite(meal) {
   }
   saveFavorites();
 }
-
 function isFav(id) {
   return favorites.some((f) => f.idMeal === id);
 }
-
 function updateFavUI() {
   dom.favCount.textContent = favorites.length;
   dom.favList.innerHTML = "";
-
   if (!favorites.length) {
     dom.favList.innerHTML = "<li class='empty'>No favorites yet</li>";
     return;
   }
-
   favorites.forEach((f) => {
     const li = el("li", { className: "fav-item" });
-
     li.innerHTML = `
       <img src="${f.strMealThumb}" />
       <div class="fav-meta">${f.strMeal}</div>
       <button class="fav-remove" data-id="${f.idMeal}">Remove</button>
     `;
-
     dom.favList.appendChild(li);
   });
-
   qsa(".fav-remove", dom.favList).forEach((btn) =>
     btn.addEventListener("click", () => {
       favorites = favorites.filter((x) => x.idMeal !== btn.dataset.id);
       saveFavorites();
       updateFavUI();
-    })
+    }),
   );
 }
-
-// ===============================
-// Events
-// ===============================
 dom.form.addEventListener("submit", (e) => {
   e.preventDefault();
   const q = dom.input.value.trim();
   if (q) searchRecipes(q);
 });
-
 dom.closeModal.addEventListener("click", closeModal);
 dom.modalBackdrop.addEventListener("click", closeModal);
-
 dom.favoritesToggle.addEventListener("click", () => {
   const visible = dom.favoritesDrawer.classList.toggle("visible");
   dom.favoritesDrawer.classList.toggle("hidden", !visible);
   dom.favoritesToggle.setAttribute("aria-pressed", visible);
   updateFavUI();
 });
-
 dom.closeFav.addEventListener("click", () => {
   dom.favoritesDrawer.classList.remove("visible");
   dom.favoritesDrawer.classList.add("hidden");
 });
-
 dom.clearFav.addEventListener("click", () => {
   favorites = [];
   saveFavorites();
   updateFavUI();
 });
-
-// Initial render
 updateFavUI();
-
-// Default veg search
 searchRecipes("paneer");
