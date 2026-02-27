@@ -138,7 +138,6 @@ function renderRecipeModal(meal) {
           <p>${meal.strInstructions.replace(/\n/g, "<br/>")}</p>
         </div>
       </div>
-
       <aside>
         <div class="recipe-ingredients">
           <h4>Ingredients</h4>
