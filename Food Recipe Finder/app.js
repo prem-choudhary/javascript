@@ -150,11 +150,9 @@ function renderRecipeModal(meal) {
 function loadFavorites() {
   return JSON.parse(localStorage.getItem("veg_favs") || "[]");
 }
-
 function saveFavorites() {
   localStorage.setItem("veg_favs", JSON.stringify(favorites));
 }
-
 function toggleFavorite(meal) {
   if (isFav(meal.idMeal)) {
     favorites = favorites.filter((f) => f.idMeal !== meal.idMeal);
