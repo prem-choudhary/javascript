@@ -16,7 +16,7 @@ const foodData = [
     id: 2,
     name: "Classic Cheeseburger",
     description:
-      "Juicy beef patty with cheddar cheese, lettuce, tomato, and pickles",
+      "Juicy patty with cheddar cheese, lettuce, tomato, and pickles",
     price: 12.99,
     category: "burger",
     image:
