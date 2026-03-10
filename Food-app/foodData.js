@@ -38,7 +38,6 @@ const foodData = [
     reviews: 64,
     prepTime: 10,
   },
-  
   {
     id: 4,
     name: "Chocolate Brownie",
@@ -51,7 +50,6 @@ const foodData = [
     reviews: 156,
     prepTime: 8,
   },
-
   {
     id: 5,
     name: "Iced Coffee",
