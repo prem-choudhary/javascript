@@ -75,7 +75,6 @@ const foodData = [
     reviews: 203,
     prepTime: 25,
   },
-
   {
     id: 7,
     name: "BBQ Bacon Burger",
@@ -89,7 +88,6 @@ const foodData = [
     reviews: 142,
     prepTime: 18,
   },
-
   {
     id: 8,
     name: "Greek Salad",
@@ -103,5 +101,4 @@ const foodData = [
     reviews: 91,
     prepTime: 12,
   },
-  
 ];
