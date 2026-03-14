@@ -12,7 +12,6 @@ const foodData = [
     reviews: 127,
     prepTime: 25,
   },
-
   {
     id: 2,
     name: "Classic Cheeseburger",
@@ -26,7 +25,6 @@ const foodData = [
     reviews: 89,
     prepTime: 15,
   },
-
   {
     id: 3,
     name: "Caesar Salad",
@@ -40,7 +38,6 @@ const foodData = [
     reviews: 64,
     prepTime: 10,
   },
-
   {
     id: 4,
     name: "Chocolate Brownie",
@@ -53,7 +50,6 @@ const foodData = [
     reviews: 156,
     prepTime: 8,
   },
-  
   {
     id: 5,
     name: "Iced Coffee",
