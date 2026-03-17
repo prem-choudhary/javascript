@@ -12,7 +12,6 @@ const foodData = [
     reviews: 127,
     prepTime: 25,
   },
-
   {
     id: 2,
     name: "Classic Cheeseburger",
@@ -26,7 +25,6 @@ const foodData = [
     reviews: 89,
     prepTime: 15,
   },
-
   {
     id: 3,
     name: "Caesar Salad",
