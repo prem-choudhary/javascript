@@ -29,25 +29,19 @@ function initEventListeners() {
     e.preventDefault();
     alert("About page coming soon!");
   });
-
-
   document.getElementById("contact-link").addEventListener("click", (e) => {
     e.preventDefault();
     alert("Contact: hello@foodieexpress.com");
   });
-
-  
   document.getElementById("signin-btn").addEventListener("click", () => {
     alert("Sign in functionality coming soon!");
   });
-
   // Hero badges
   document.querySelectorAll(".hero-badge").forEach((badge) => {
     badge.addEventListener("click", () => {
       alert(badge.dataset.message);
     });
   });
-
   // Category buttons
   document.querySelectorAll(".category-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -56,22 +50,18 @@ function initEventListeners() {
       renderFoodItems();
     });
   });
-
   // Cart
   document.getElementById("cart-btn").addEventListener("click", () => {
     document.getElementById("cart-modal").classList.remove("hidden");
   });
-
   document.getElementById("close-cart").addEventListener("click", () => {
     document.getElementById("cart-modal").classList.add("hidden");
   });
-
   document.getElementById("checkout-btn").addEventListener("click", () => {
     const total = calculateTotal();
     alert(`Proceeding to checkout with total: $${total.toFixed(2)}`);
   });
 }
-
 // Update category buttons
 function updateCategoryButtons() {
   document.querySelectorAll(".category-btn").forEach((btn) => {
@@ -84,7 +74,6 @@ function updateCategoryButtons() {
     }
   });
 }
-
 // Render food items
 function renderFoodItems() {
   const filteredFoods =
@@ -100,7 +89,6 @@ function renderFoodItems() {
     foodGrid.appendChild(foodCard);
   });
 }
-
 // Create food card
 function createFoodCard(food) {
   const card = document.createElement("div");
@@ -161,12 +149,10 @@ function createFoodCard(food) {
       toggleFoodDetails(card);
     }
   });
-
   card.querySelector(".add-to-cart").addEventListener("click", (e) => {
     e.stopPropagation();
     addToCart(food);
   });
-
   const nutritionBtn = card.querySelector(".nutrition-btn");
   if (nutritionBtn) {
     nutritionBtn.addEventListener("click", (e) => {
@@ -174,10 +160,8 @@ function createFoodCard(food) {
       alert("Nutritional information coming soon!");
     });
   }
-
   return card;
 }
-
 // Toggle food details
 function toggleFoodDetails(card) {
   const description = card.querySelector(".food-description");
@@ -193,7 +177,6 @@ function toggleFoodDetails(card) {
     details.classList.remove("hidden");
   }
 }
-
 // Cart functions
 function addToCart(food) {
   const existing = cartItems.find((item) => item.id === food.id);
@@ -204,12 +187,10 @@ function addToCart(food) {
   }
   updateCartDisplay();
 }
-
 function removeFromCart(foodId) {
   cartItems = cartItems.filter((item) => item.id !== foodId);
   updateCartDisplay();
 }
-
 function updateQuantity(foodId, quantity) {
   if (quantity === 0) {
     removeFromCart(foodId);
@@ -221,7 +202,6 @@ function updateQuantity(foodId, quantity) {
     updateCartDisplay();
   }
 }
-
 function calculateTotal() {
   const subtotal = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
