@@ -38,7 +38,6 @@ const foodData = [
     reviews: 64,
     prepTime: 10,
   },
-
   {
     id: 4,
     name: "Chocolate Brownie",
@@ -51,7 +50,6 @@ const foodData = [
     reviews: 156,
     prepTime: 8,
   },
-
   {
     id: 5,
     name: "Iced Coffee",
@@ -64,7 +62,6 @@ const foodData = [
     reviews: 78,
     prepTime: 5,
   },
-
   {
     id: 6,
     name: "Pepperoni Pizza",
@@ -78,7 +75,6 @@ const foodData = [
     reviews: 203,
     prepTime: 25,
   },
-
   {
     id: 7,
     name: "BBQ Bacon Burger",
@@ -92,7 +88,6 @@ const foodData = [
     reviews: 142,
     prepTime: 18,
   },
-
   {
     id: 8,
     name: "Greek Salad",
