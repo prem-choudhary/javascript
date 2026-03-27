@@ -221,10 +221,8 @@ function updateCartDisplay() {
   } else {
     cartCount.classList.add("hidden");
   }
-
   renderCartItems();
 }
-
 function renderCartItems() {
   const emptyCart = document.getElementById("empty-cart");
   const cartItemsDiv = document.getElementById("cart-items");
@@ -232,13 +230,11 @@ function renderCartItems() {
   const subtotalEl = document.getElementById("subtotal");
   const deliveryFeeEl = document.getElementById("delivery-fee");
   const totalEl = document.getElementById("total");
-
   if (cartItems.length === 0) {
     emptyCart.classList.remove("hidden");
     cartItemsDiv.classList.add("hidden");
     return;
   }
-
   emptyCart.classList.add("hidden");
   cartItemsDiv.classList.remove("hidden");
 
