@@ -4,11 +4,9 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
 .fade-in {
   animation: fadeIn 0.3s ease-in;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -19,11 +17,9 @@
     transform: translateY(0);
   }
 }
-
 .food-card:hover {
   transform: scale(1.05);
 }
-
 .food-card.expanded .food-description {
   -webkit-line-clamp: unset;
 }
