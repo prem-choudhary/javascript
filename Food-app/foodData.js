@@ -102,8 +102,3 @@ const foodData = [
     prepTime: 12,
   },
 ];
-
-
-
-
-
