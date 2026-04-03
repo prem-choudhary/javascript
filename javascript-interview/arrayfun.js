@@ -39,7 +39,6 @@ function binaryMatrix(N, M, matrix) {
 
   }
 }
-
 console.log(
   binaryMatrix(3, 3, [
     [1, 0, 1],
