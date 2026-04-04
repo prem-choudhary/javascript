@@ -1,17 +1,17 @@
-// function binaryMatrix(N, M, matrix) {
-//   for (var i = 0; i < N; i++) {
-//     var jhola = "";
-//     for (var j = 0; j < M; j++) {
-//       if (matrix[i][j] == 1) {
-//         matrix[i][j] = 1;
-//       } else {
-//         matrix[i][j] = 0;
-//       }
-//       jhola = jhola + matrix[i][j] + " ";
-//     }
-//     console.log(jhola);
-//   }
-// }
+function binaryMatrix(N, M, matrix) {
+  for (var i = 0; i < N; i++) {
+    var jhola = "";
+    for (var j = 0; j < M; j++) {
+      if (matrix[i][j] == 1) {
+        matrix[i][j] = 1;
+      } else {
+        matrix[i][j] = 0;
+      }
+      jhola = jhola + matrix[i][j] + " ";
+    }
+    console.log(jhola);
+  }
+}
 
 function binaryMatrix(N, M, matrix) {
   // Validate input
