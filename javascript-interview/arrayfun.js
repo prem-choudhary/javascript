@@ -12,7 +12,6 @@ function binaryMatrix(N, M, matrix) {
     console.log(jhola);
   }
 }
-
 function binaryMatrix(N, M, matrix) {
   // Validate input
   if (
@@ -23,7 +22,6 @@ function binaryMatrix(N, M, matrix) {
     console.log("Invalid matrix dimensions");
     return;
   }
-
   // Process each row
   for (let i = 0; i < N; i++) {
     let rowString = "";
