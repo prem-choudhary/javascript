@@ -34,7 +34,6 @@ function binaryMatrix(N, M, matrix) {
 
     }
     console.log(rowString); 
-
   }
 }
 console.log(
