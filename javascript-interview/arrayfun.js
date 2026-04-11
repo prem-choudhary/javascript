@@ -23,7 +23,6 @@ function binaryMatrix(N, M, matrix) {
     console.log("Invalid matrix dimensions");
     return;
   }
-
   // Process each row
   for (let i = 0; i < N; i++) {
     let rowString = "";
@@ -38,7 +37,6 @@ function binaryMatrix(N, M, matrix) {
     console.log(rowString); 
   }
 }
-
 console.log(
   binaryMatrix(3, 3, [
     [1, 0, 1],
