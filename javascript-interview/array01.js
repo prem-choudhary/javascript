@@ -66,7 +66,6 @@ console.log(trapRainWater([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])); // 6
 function nextGreaterElement(arr) {
   const result = [];
   const stack = [];
-
   for (let i = arr.length - 1; i >= 0; i--) {
     while (stack.length && stack[stack.length - 1] <= arr[i]) {
       stack.pop();
@@ -78,12 +77,10 @@ function nextGreaterElement(arr) {
   return result;
 }
 console.log(nextGreaterElement([4, 5, 2, 25])); // [5, 25, 25, -1]
-
 const todos = [
   { id: 1, task: "Learn JavaScript", completed: true },
   { id: 2, task: "Practice Coding", completed: false },
   { id: 3, task: "Build Projects", completed: false },
 ];
-
 const pending = todos.filter((todo) => !todo.completed);
 console.log("Pending tasks:", pending);
