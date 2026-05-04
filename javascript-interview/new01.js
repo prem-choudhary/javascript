@@ -15,7 +15,7 @@ function reverseLinkedList(head) {
     // Store the next node
     let next = current.next;
     // Reverse the link
-    current.next = prev;
+    current.next = prev;n 
     // Move prev and current one step forward
     prev = current;
     current = next;
