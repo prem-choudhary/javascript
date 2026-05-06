@@ -37,8 +37,6 @@
 //     let d = 10
 // }
 // // console.log(d)
-
-
 const userInput = prompt("Enter a name:");
 let revString = "";
 for (let i = userInput.length - 1; i >= 0; i--) {
