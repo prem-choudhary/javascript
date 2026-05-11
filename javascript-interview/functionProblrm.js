@@ -19,8 +19,7 @@ function deepEqual(obj1, obj2) {
   }
 
   return true;
-}
-
+}e
 // Example usage
 const object1 = {
   name: "John",
@@ -30,7 +29,6 @@ const object1 = {
     zip: "10001",
   },
 };
-
 const object2 = {
   name: "John",
   age: 30,
@@ -39,5 +37,4 @@ const object2 = {
     zip: "10001",
   },
 };
-
 console.log(deepEqual(object1, object2)); // true
