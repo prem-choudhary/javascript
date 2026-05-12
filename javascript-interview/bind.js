@@ -4,7 +4,6 @@ const obj = {
     return this.x;
   },
 };
-
 const unboundGetX = obj.getX;
 console.log(unboundGetX()); // Output: undefined
 
