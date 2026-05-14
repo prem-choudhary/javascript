@@ -28,7 +28,6 @@ for (let row = 0; row < matrix.length; row++) {
     console.log(`Element at [${row}][${col}] = ${matrix[row][col]}`);
   }
 }
-
 function isEvenArray(arr) {
   let result = [];
   for (let i = 0; i < arr.length; i++) {
@@ -40,11 +39,9 @@ function isEvenArray(arr) {
 }
 
 console.log(isEvenArray([1, 2, 3, 4, 5, 6])); // Output: [2, 4, 6]
-
 let person = {
   name: "Prem",
   age: 30,
-  
   greet: function () {
     console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
   },
