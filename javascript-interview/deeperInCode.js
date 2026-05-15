@@ -2,7 +2,7 @@ function greet(name) {
   return `Hello, ${name}!`;
 }
 
-console.log(greet("Aaruu")); // Output: Hello, Aaruu!
+console.log(greet("Aaruuh")); // Output: Hello, Aaruuh!
 
 let fruits = ["apple", "banana", "cherry"];
 console.log(fruits[1]); // Output: banana
@@ -40,8 +40,8 @@ function isEvenArray(arr) {
 
 console.log(isEvenArray([1, 2, 3, 4, 5, 6])); // Output: [2, 4, 6]
 let person = {
-  name: "Prem",
-  age: 30,
+  name: "Praveen",
+  age: 23,
   greet: function () {
     console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
   },
