@@ -32,7 +32,6 @@ function isEvenArray(arr) {
   }
   return result;
 }
-
 console.log(isEvenArray([1, 2, 3, 4, 5, 6])); // Output: [2, 4, 6]
 let person = {
   name: "Praveen",
@@ -41,5 +40,4 @@ let person = {
     console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
   },
 };
-
 person.greet();
