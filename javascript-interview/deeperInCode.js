@@ -1,7 +1,6 @@
 function greet(name) {
   return `Hello, ${name}!`;
 }
-
 console.log(greet("Aaruuh")); // Output: Hello, Aaruuh!
 
 let fruits = ["apple", "banana", "cherry"];
@@ -10,19 +9,15 @@ console.log(fruits[1]); // Output: banana
 for (let i = 0; i < fruits.length; i++) {
   console.log(`Fruit at index ${i}: ${fruits[i]}`);
 }
-
 fruits.forEach((fruit, index) => {
   console.log(`(forEach) Fruit ${index}: ${fruit}`);
 });
-
 let matrix = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
 ];
-
 console.log(matrix[1][2]); // Output: 6
-
 for (let row = 0; row < matrix.length; row++) {
   for (let col = 0; col < matrix[row].length; col++) {
     console.log(`Element at [${row}][${col}] = ${matrix[row][col]}`);
