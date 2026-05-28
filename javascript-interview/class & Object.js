@@ -5,8 +5,6 @@
 //     console.log("Print the marks = ", this.marks);
 //   },
 // };
-
-
 function makeUser(name, age) {
   return {
     name: name,
@@ -14,7 +12,6 @@ function makeUser(name, age) {
     // ...other properties
   };
 }
-
 let user = makeUser("John", 30);
 alert(user.name); // John
 alert(user.age); // John
