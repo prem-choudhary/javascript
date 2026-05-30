@@ -4,37 +4,30 @@
 // }
 // console.log(l)
 
-
-
-
 //  arrow function and function declaration are different in terms of hoisting.
 // arrowFun()
-let arrowFun =() => {
-    console.log("Hello Arrow function")
-}
-arrowFun()
-fun() // it should be working because of function hoisting
-function fun(){
-    console.log("Hello function")
+let arrowFun = () => {
+  console.log("Hello Arrow function");
+};
+arrowFun();
+fun(); // it should be working because of function hoisting
+function fun() {
+  console.log("Hello function");
 }
 // output is Hello function
-
-
-var a = 10
-var a =20
-console.log(a) // 20
-
-let b = 10
-b = 10
-console.log(b) // SyntaxError: Identifier 'b' has already been declared
-const c  = 10
-
+var a = 10;
+var a = 20;
+console.log(a); // 20
+let b = 10;
+b = 10;
+console.log(b); // SyntaxError: Identifier 'b' has already been declared
+const c = 10;
 {
-    var a = 45
+  var a = 45;
 }
-console.log(a)
+console.log(a);
 {
-    let d = 10
+  let d = 10;
 }
 // console.log(d)
 // const userInput = prompt("Enter a name:");
