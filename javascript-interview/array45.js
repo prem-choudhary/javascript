@@ -11,7 +11,7 @@ let arrowFun = () => {
 };
 arrowFun();
 fun(); // it should be working because of function hoisting
-function fun() {
+function fun() { 
   console.log("Hello function");
 }
 // output is Hello function

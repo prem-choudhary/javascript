@@ -11,16 +11,6 @@ var res = str.slice(0, 3);
 console.log(res);
 //   o/p > is "prem","kailash","Bharat"
 
-// var array = [
-//   "Vinod",
-//   "a",
-//   "Rita",
-//   "Hitesh",
-//   "Motibhai",
-//   "Bhuraji",
-//   "a",
-//   "Fuliben",
-// ];
 
 // function slicec(array, M, P) {
 //   console.log(P);
