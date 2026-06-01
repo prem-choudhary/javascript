@@ -19,7 +19,7 @@ function deepEqual(obj1, obj2) {
   }
 
   return true;
-}e
+}
 // Example usage
 const object1 = {
   name: "John",

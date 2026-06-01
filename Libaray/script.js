@@ -81,13 +81,5 @@ form.addEventListener("submit", function (e) {
   }
 });
 
-// Enable delete buttons
-function enableDeleteButtons() {
-  let deleteBtns = document.querySelectorAll(".delete-btn");
 
-  deleteBtns.forEach((btn) => {
-    btn.onclick = function () {
-      this.parentElement.parentElement.remove();
-    };
-  });
-}
+
