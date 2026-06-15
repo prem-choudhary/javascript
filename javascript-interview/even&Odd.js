@@ -4,6 +4,7 @@ let checkEvenOdd = (num) => {
   } else {
     console.log("Odd");
   }
+  
 };
 checkEvenOdd(10); // Even
 checkEvenOdd(7); // Odd
