@@ -5,9 +5,6 @@ class ListNode {
     this.next = next;
   }
 }
-
-// Recursive function to reverse a linked list
-
 function reverseListRecursive(head) {
   // Base case: if head is null or only one node
   if (head === null || head.next === null) return head;
