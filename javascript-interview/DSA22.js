@@ -8,19 +8,14 @@ class ListNode {
 function reverseListRecursive(head) {
   // Base case: if head is null or only one node
   if (head === null || head.next === null) return head;
-
   // Recursive call to get to the end of the list
   let newHead = reverseListRecursive(head.next);
-
   // Reverse the link
-
   head.next.next = head;
   head.next = null;
   console.log(reverseListRecursive);
-
   return newHead;
 }
-
 // Helper function to create a linked list from an array
 function createLinkedList(arr) {
   if (arr.length === 0) return null;
@@ -32,7 +27,6 @@ function createLinkedList(arr) {
   }
   return dummy.next;
 }
-
 // Helper function to print the linked list
 function printList(head) {
   let result = [];
