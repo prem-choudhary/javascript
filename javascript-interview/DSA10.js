@@ -1,10 +1,9 @@
 async function test() {
   console.log("Start");
-
   await Promise.resolve().then(() => {
     console.log("Microtask 1");
   });
-
+  
   Promise.resolve()
     .then(() => {
       console.log("Microtask 2");
@@ -15,5 +14,4 @@ async function test() {
 
   console.log("End");
 }
-
 test();
