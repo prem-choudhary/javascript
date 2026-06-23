@@ -6,12 +6,10 @@ let matrix = [
   [9, 10, 11, 12],
   [13, 14, 15, 16],
 ];
-
 let top = 0,
   bottom = N - 1,
   left = 0,
   right = M - 1;
-
 // Print the entire matrix
 console.log("Entire Matrix:");
 for (let i = top; i <= bottom; i++) {
@@ -25,14 +23,11 @@ console.log("\nTop Boundary:");
 for (let i = left; i <= right; i++) {
   console.log(`matrix[${top}][${i}] = ${matrix[top][i]}`);
 }
-
 // Print left boundary (column at index 'left')
 console.log("\nLeft Boundary:");
-
 for (let i = top; i <= bottom; i++) {
   console.log(`matrix[${i}][${left}] = ${matrix[i][left]}`);
 }
-
 console.log("\nRight Boundary:");
 for (let i = top; i <= bottom; i++) {
   console.log(`matrix[${i}][${right}] = ${matrix[i][right]}`);
