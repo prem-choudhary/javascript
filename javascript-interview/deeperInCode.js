@@ -2,10 +2,8 @@ function greet(name) {
   return `Hello, ${name}!`;
 }
 console.log(greet("Aaruuh")); // Output: Hello, Aaruuh!
-
 let fruits = ["apple", "banana", "cherry"];
 console.log(fruits[1]); // Output: banana
-
 for (let i = 0; i < fruits.length; i++) {
   console.log(`Fruit at index ${i}: ${fruits[i]}`);
 }
@@ -41,5 +39,3 @@ let person = {
   },
 };
 person.greet();
-
-
