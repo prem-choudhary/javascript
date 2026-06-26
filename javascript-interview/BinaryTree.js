@@ -5,12 +5,10 @@ class TreeNode {
     this.right = null;
   }
 }
-
 function inorderTraversal(root) {
   const result = [];
   const stack = [];
   let current = root;
-
   while (current || stack.length > 0) {
     // Reach the leftmost node
     while (current) {
@@ -28,7 +26,6 @@ function inorderTraversal(root) {
 }
 console.log(inorderTraversal);
 
-// Example usage
 const root = new TreeNode(1);
 root.left = new TreeNode(2);
 root.right = new TreeNode(3);
