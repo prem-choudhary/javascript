@@ -21,11 +21,9 @@ function inorderTraversal(root) {
     // Move to the right subtree
     current = current.right;
   }
-
   return result;
 }
 console.log(inorderTraversal);
-
 const root = new TreeNode(1);
 root.left = new TreeNode(2);
 root.right = new TreeNode(3);
