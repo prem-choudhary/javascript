@@ -13,6 +13,7 @@ function sumNested(arr) {
 
   return total;
 }
+
 // Test cases
 // console.log(sumNested([1, [2, 3], [4, [5]]))); // 15
 console.log(
@@ -21,11 +22,18 @@ console.log(
     [3, [4, 5]],
   ]),
 ); // 15
+
 console.log(sumNested([[1], [2]])); // 3
+
 // First-order function (does not accept or return another function)
+
 const firstOrderFunc = () => console.log("Hello, I am a first-order function");
+
 // Higher-order function (accepts a function as an argument)
+
 const higherOrder = (callback) => callback();
-// Passing the first-order function to the higher-order function
+
+// Passing the first-order function to the higher-order function 
+
 higherOrder(firstOrderFunc);
 console.log([] + {});
