@@ -10,10 +10,8 @@ function sumNested(arr) {
       total += item;
     }
   }
-
   return total;
 }
-
 // Test cases
 // console.log(sumNested([1, [2, 3], [4, [5]]))); // 15
 console.log(
@@ -22,7 +20,6 @@ console.log(
     [3, [4, 5]],
   ]),
 ); // 15
-
 console.log(sumNested([[1], [2]])); // 3
 
 // First-order function (does not accept or return another function)

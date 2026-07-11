@@ -18,5 +18,3 @@ for (let fruit of fruits) {
 // forEach
 fruits.forEach((fruit) => console.log(fruit));
 console.log("Hello JavaScript coder ")
-
-
