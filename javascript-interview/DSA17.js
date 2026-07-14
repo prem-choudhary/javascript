@@ -33,4 +33,3 @@ console.log(queue.dequeue()); // Output: 1
 console.log(queue.front()); // Output: 2
 console.log(queue.size()); // Output: 2
 console.log(queue.isEmpty()); // Output: false
-
