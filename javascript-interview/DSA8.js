@@ -1,7 +1,6 @@
 function isValidParentheses(s) {
   const stack = [];
   const brackets = { "(": ")", "{": "}", "[": "]" };
-
   for (let char of s) {
     if (brackets[char]) {
       stack.push(char);
@@ -12,10 +11,8 @@ function isValidParentheses(s) {
       }
     }
   }
-
   return stack.length === 0;
 }
-
 // Example usage
 console.log(isValidParentheses("()[]{}")); // Output: true
 console.log(isValidParentheses("(]")); // Output: false
