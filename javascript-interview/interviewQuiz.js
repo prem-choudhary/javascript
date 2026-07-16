@@ -26,3 +26,4 @@ console.log(isPalindrome(45));
 console.log(isPalindrome(100));
 console.log(isPalindrome(18));
 console.log(isPalindrome(77));
+
