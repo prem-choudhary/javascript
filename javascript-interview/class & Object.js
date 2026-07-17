@@ -10,6 +10,7 @@ function makeUser(name, age) {
     name: name,
     age: age,
     // ...other properties
+    
   };
 }
 let user = makeUser("John", 30);
