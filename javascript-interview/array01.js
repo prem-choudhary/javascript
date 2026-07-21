@@ -19,7 +19,6 @@ function maxSubArraySum(arr) {
   return maxSum;
 }
 console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
-
 // Find Missing Number (1 to N)
 function findMissing(arr, n) {
   const total = (n * (n + 1)) / 2;
@@ -27,7 +26,6 @@ function findMissing(arr, n) {
   return total - sum;
 }
 console.log(findMissing([1, 2, 4, 5, 6], 6)); // 3 is missing
-
 //  Count Frequency of Elements
 function countFrequency(arr) {
   const map = {};
@@ -37,9 +35,7 @@ function countFrequency(arr) {
   return map;
 }
 console.log(countFrequency([1, 2, 2, 3, 1, 4]));
-
 // Trapping Rain Water Problem
-
 function trapRainWater(height) {
   let left = 0,
     right = height.length - 1;
@@ -61,7 +57,6 @@ function trapRainWater(height) {
   return water;
 }
 console.log(trapRainWater([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])); // 6
-
 //  Next Greater Element
 function nextGreaterElement(arr) {
   const result = [];
