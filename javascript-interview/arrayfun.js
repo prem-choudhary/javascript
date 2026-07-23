@@ -12,7 +12,6 @@ function binaryMatrix(N, M, matrix) {
     console.log(jhola);
   }
 }
-
 function binaryMatrix(N, M, matrix) {
   // Validate input
   if (
