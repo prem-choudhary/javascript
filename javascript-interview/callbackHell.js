@@ -26,7 +26,6 @@ function postJoke(translatedJoke) {
     }, 1000);
   });
 }
-
 fetchRandomJoke()
   .then((joke) => {
     console.log(joke);
