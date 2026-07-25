@@ -17,7 +17,6 @@ function translateJoke(joke) {
     }, 1000);
   });
 }
-
 function postJoke(translatedJoke) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
