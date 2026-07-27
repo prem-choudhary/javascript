@@ -7,7 +7,6 @@ function fetchRandomJoke() {
     }, 1000);
   });
 }
-
 function translateJoke(joke) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
