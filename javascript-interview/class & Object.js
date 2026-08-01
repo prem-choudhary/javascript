@@ -17,3 +17,5 @@ let user = makeUser("John", 30);
 alert(user.name); // John
 alert(user.age); // John
 console.log("Back to Work")
+
+console.log("Back to Work")
