@@ -39,5 +39,3 @@ let person = {
   },
 };
 person.greet();
-
-
