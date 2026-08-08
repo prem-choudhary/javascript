@@ -26,11 +26,11 @@ console.log(sumNested([[1], [2]])); // 3
 
 const firstOrderFunc = () => console.log("Hello, I am a first-order function");
 
-// Higher-order function (accepts a function as an argument)  
+// Higher-order function (accepts a function as an argument)
 
 const higherOrder = (callback) => callback();
 
-// Passing the first-order function to the higher-order function 
+// Passing the first-order function to the higher-order function
 
 higherOrder(firstOrderFunc);
 console.log([] + {});
