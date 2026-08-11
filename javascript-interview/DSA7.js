@@ -18,10 +18,8 @@ function reverseList(head) {
     prev = current;
     current = next;
   }
-
   return prev; // New head
 }
-
 // Example usage
 const head = new ListNode(1);
 head.next = new ListNode(2);
