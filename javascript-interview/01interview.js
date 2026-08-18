@@ -4,7 +4,6 @@ class ListNode {
     this.next = next;
   }
 }
-
 // Helper to build linked list
 function buildList(arr) {
   let dummy = new ListNode();
@@ -15,7 +14,6 @@ function buildList(arr) {
   }
   return dummy.next;
 }
-
 // ✅ Reverse Linked List Function
 function reverseList(head) {
   let prev = null;
