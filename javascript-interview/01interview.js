@@ -26,7 +26,6 @@ function reverseList(head) {
   }
   return prev;
 }
-
 // Usage
 let head = buildList([1, 2, 3, 4]);
 let reversed = reverseList(head);
