@@ -16,7 +16,6 @@ loops();
 console.timeEnd("timer1");
 console.assert(5 > 10, "This assertion failed");
 console.group("User Information");
-
 console.log("Name: Ritik");
 console.log("Age: 30");
 console.groupEnd();
@@ -24,7 +23,6 @@ console.groupEnd();
 console.count("countLabel");
 console.count("countLabel");
 console.count("countLabel");
-
 console.count("countLabel");
 function a() {
   b();
