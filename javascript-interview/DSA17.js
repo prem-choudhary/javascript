@@ -3,7 +3,6 @@ class Queue {
     this.items = [];
   }
   // Add an element to the end of the queue
-
   enqueue(element) {
     this.items.push(element);
   }
@@ -24,6 +23,7 @@ class Queue {
     return this.items.length;
   }
 }
+
 // Example usage
 const queue = new Queue();
 queue.enqueue(1);
