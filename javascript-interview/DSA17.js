@@ -23,7 +23,6 @@ class Queue {
     return this.items.length;
   }
 }
-
 // Example usage
 const queue = new Queue();
 queue.enqueue(1);
