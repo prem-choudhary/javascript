@@ -17,7 +17,6 @@ for (let i = top; i <= bottom; i++) {
     console.log(`matrix[${i}][${j}] = ${matrix[i][j]}`);
   }
 }
-
 // Print top boundary (row at index 'top')
 console.log("\nTop Boundary:");
 for (let i = left; i <= right; i++) {
