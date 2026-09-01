@@ -18,7 +18,6 @@ function isBalanced(str) {
 
   return stack.length === 0; // True if stack is empty (all brackets matched)
 }
-
 // Example usage
 console.log(isBalanced("({[]})")); // Output: true
 console.log(isBalanced("([)]")); // Output: false
