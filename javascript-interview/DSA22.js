@@ -37,10 +37,8 @@ function printList(head) {
   }
   console.log(result.join(" -> ") + (result.length ? " -> null" : "null"));
 }
-
 // Test the solution
 let inputArray = [1, 2, 3, 4, 5];
-
 console.log("Original List:");
 let list = createLinkedList(inputArray);
 printList(list); // Output: 1 -> 2 -> 3 -> 4 -> 5 -> null
