@@ -13,7 +13,6 @@ function reverseTheirWay(array) {
   return output;
 }
 function JustDoIt() {
-  
   console.log("their way starts");
 
   var startOf = new Date().getTime();
