@@ -14,6 +14,7 @@ function binaryMatrix(N, M, matrix) {
 }
 function binaryMatrix(N, M, matrix) {
   // Validate input
+
   if (
     !matrix ||
     matrix.length !== N ||
@@ -23,11 +24,11 @@ function binaryMatrix(N, M, matrix) {
     return;
   }
   // Process each row
+
   for (let i = 0; i < N; i++) {
     let rowString = "";
     for (let j = 0; j < M; j++) {
       // Convert to binary (1 if value is 1, else 0)
-
       matrix[i][j] = matrix[i][j] === 1 ? 1 : 0;
       // Add element to string, with space only between elements
       rowString += matrix[i][j] + (j < M - 1 ? " " : "");
