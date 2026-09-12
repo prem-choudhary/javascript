@@ -10,7 +10,6 @@ function inorderTraversal(root) {
   const stack = [];
   let current = root;
   while (current || stack.length > 0) {
-  
     // Reach the leftmost node
     while (current) {
       stack.push(current);
@@ -21,7 +20,7 @@ function inorderTraversal(root) {
     current = stack.pop();
     result.push(current.val);
     // Move to the right subtree
-    
+
     current = current.right;
   }
   return result;
