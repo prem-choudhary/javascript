@@ -16,11 +16,9 @@ function inorderTraversal(root) {
       current = current.left;
     }
     // Process the node
-
     current = stack.pop();
     result.push(current.val);
     // Move to the right subtree
-
     current = current.right;
   }
   return result;
