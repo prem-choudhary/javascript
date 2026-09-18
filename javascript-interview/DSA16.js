@@ -25,13 +25,11 @@ class Stack {
   isEmpty() {
     return this.items.length === 0;
   }
-
   // Get the size of the stack
   size() {
     return this.items.length;
   }
 }
-
 // Example usage
 const stack = new Stack();
 stack.push(1);
