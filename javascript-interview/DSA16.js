@@ -2,19 +2,16 @@ class Stack {
   constructor() {
     this.items = [];
   }
-
   // Push an element onto the stack
   push(element) {
     this.items.push(element);
   }
-
   // Pop an element from the stack
   pop() {
     if (this.isEmpty()) return null;
 
     return this.items.pop();
   }
-
   // Peek at the top element
   peek() {
     if (this.isEmpty()) return null;
