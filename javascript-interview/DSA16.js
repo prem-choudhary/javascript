@@ -17,7 +17,6 @@ class Stack {
     if (this.isEmpty()) return null;
     return this.items[this.items.length - 1];
   }
-
   // Check if stack is empty
   isEmpty() {
     return this.items.length === 0;
