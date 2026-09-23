@@ -13,7 +13,6 @@ class Stack {
 
     return this.items.pop();
   }
-
   // Peek at the top element
   peek() {
     if (this.isEmpty()) return null;
