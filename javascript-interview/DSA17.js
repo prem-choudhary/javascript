@@ -6,7 +6,8 @@ class Queue {
   enqueue(element) {
     this.items.push(element);
   }
-  // Remove and return the first element
+
+  
   dequeue() {
     if (this.isEmpty()) return null;
     return this.items.shift();
