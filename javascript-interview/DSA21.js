@@ -31,4 +31,3 @@ console.log("\nRight Boundary:");
 for (let i = top; i <= bottom; i++) {
   console.log(`matrix[${i}][${right}] = ${matrix[i][right]}`);
 }
-
