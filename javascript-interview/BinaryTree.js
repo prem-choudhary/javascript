@@ -10,11 +10,13 @@ function inorderTraversal(root) {
   const stack = [];
   let current = root;
   while (current || stack.length > 0) {
+    
     // Reach the leftmost node
     while (current) {
       stack.push(current);
       current = current.left;
     }
+
     // Process the node
     current = stack.pop();
     result.push(current.val);
@@ -29,4 +31,5 @@ root.left = new TreeNode(2);
 root.right = new TreeNode(3);
 root.left.left = new TreeNode(4);
 root.left.right = new TreeNode(5);
-console.log(inorderTraversal(root)); // Output: [4, 2, 5, 1, 3]
+console.log(inorderTraversal(root)); 
+// Output: [4, 2, 5, 1, 3]
