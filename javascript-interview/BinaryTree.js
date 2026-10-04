@@ -10,13 +10,12 @@ function inorderTraversal(root) {
   const stack = [];
   let current = root;
   while (current || stack.length > 0) {
-    
+
     // Reach the leftmost node
     while (current) {
       stack.push(current);
       current = current.left;
     }
-
     // Process the node
     current = stack.pop();
     result.push(current.val);
