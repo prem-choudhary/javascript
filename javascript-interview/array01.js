@@ -58,6 +58,7 @@ function trapRainWater(height) {
 }
 console.log(trapRainWater([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])); // 6
 //  Next Greater Element
+
 function nextGreaterElement(arr) {
   const result = [];
   const stack = [];
