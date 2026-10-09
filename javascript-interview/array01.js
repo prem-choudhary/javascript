@@ -39,7 +39,7 @@ console.log(countFrequency([1, 2, 2, 3, 1, 4]));
 function trapRainWater(height) {
   let left = 0,
     right = height.length - 1;
-  let leftMax      = 0,
+  let leftMax = 0,
     rightMax = 0,
     water = 0;
 
