@@ -31,7 +31,6 @@ updateBrand(car);
 // updateBrand mutates car
 console.log(car.brand); // Toyota
 
-
 // Constructor
 const multiply = new Function("x", "y", "return x * y");
 
