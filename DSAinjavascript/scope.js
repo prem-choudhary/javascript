@@ -24,7 +24,6 @@ console.log(oneNum(10));
 function oneNum(num) {
   return num + 10;
 }
-
 // console.log(TwoNumber(7))
 const TwoNumber = function (num1) {
   return num1 + 2;
