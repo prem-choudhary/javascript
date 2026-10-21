@@ -16,7 +16,6 @@ function solveNQueens(n) {
 
     return true;
   };
-
   const solve = (board, row) => {
     if (row === n) {
       printBoard(board);
@@ -36,7 +35,6 @@ function solveNQueens(n) {
         board[row][col] = ".";
       }
     }
-
     return hasSolution;
   };
 
@@ -51,7 +49,6 @@ function solveNQueens(n) {
     console.log("No solution exists");
   }
 }
-
 solveNQueens(4);
 /*  first ans.
      . Q . .
