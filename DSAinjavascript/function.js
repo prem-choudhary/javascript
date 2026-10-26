@@ -28,4 +28,4 @@ const MyValue = [110, 120, 130, 140, 150];
 function returnValue(getArray) {
   return getArray[1]; // 120
 }
-console.log(returnValue(MyValue)); // 120 will printe   d
+console.log(returnValue(MyValue)); // 120 will print
