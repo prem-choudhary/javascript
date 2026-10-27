@@ -29,3 +29,4 @@ function returnValue(getArray) {
   return getArray[1]; // 120
 }
 console.log(returnValue(MyValue)); // 120 will print
+
