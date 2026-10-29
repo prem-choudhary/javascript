@@ -1,7 +1,7 @@
 //  This all are a javascript Function to print some value to terminal
 console.log("Hello"); // Hello
 console.warn("Hello from JavaScript");
-console.error("failed to fatching to data from to API");
+console.error("failed to fetch data from API");
 console.info("this is information ");
 const arr = [
   { name: "prem", age: 20, gander: "male" },
