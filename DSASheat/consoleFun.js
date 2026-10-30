@@ -8,14 +8,11 @@ const arr = [
   { name: "Aarti", age: 18, gander: "female" },
 ];
 console.table(arr);
-
 console.time("API Fetch ");
 setTimeout(() => {
   console.timeEnd("API Fetch ");
 }, 2000);
-
-// alert("Critical error occurred! ");
-
+ alert("Critical error occurred! ");
 console.group("User Details 口");
 console.log("Name: Alice");
 console.log("Age: 25");
