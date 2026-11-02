@@ -18,6 +18,5 @@ console.log("Name: Alice");
 console.log("Age: 25");
 console.log("Role: Admin");
 console.groupEnd();
-
 //  const element = document.querySelector("#app");
 //  console.dir(element);
