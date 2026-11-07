@@ -8,7 +8,7 @@ function CountingEvenOdd(arr) {
     } else {
       odd_count++;
     }
-  } 
+  }
   console.log("Number of even elements = " + even_count);
   console.log("Number of odd elements = " + odd_count);
 }
