@@ -14,3 +14,4 @@ function CountingEvenOdd(arr) {
 }
 let arr = [2, 3, 4, 5, 6];
 CountingEvenOdd(arr);
+console.log("Number of even elements = " + arr.filter(num => num % 2 === 0).length);
