@@ -8,4 +8,3 @@ const users = [
 console.error(users);
 console.log(users);
 console.table(users);
-
