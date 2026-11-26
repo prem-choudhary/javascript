@@ -6,6 +6,7 @@ const users = [
   { name: "Bob", age: 10 },
 ];
 console.error(users);
+
 console.log(users);
 
 console.table(users);
